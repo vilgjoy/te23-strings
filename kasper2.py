@@ -1,11 +1,15 @@
 player = 1
 turn = 1
-max_turns = 10
+max_turns = 20
 print("Press Ctrl+C to stop loop")
 
 while True:
-    if turn % 7 == 0 or turn % 11 == 0 or '7' in str(turn) or '11' in str(turn):
-        result = "clap"
+    if turn % 3 == 0  and turn % 5 == 0:
+        result = "oompaloompa"
+    elif turn % 3 == 0:
+        result = "oompa"
+    elif turn % 5 == 0:
+        result = "loompa"
     else:
         result = str(turn)
 
